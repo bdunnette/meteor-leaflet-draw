@@ -5,7 +5,6 @@ Package.describe({
 });
 
 Package.onUse(function (api) {
-  api.use('leaflet', 'client');
   api.addFiles('lib/leaflet.draw.js', 'client');
   api.addFiles('styles/leaflet.draw.css', 'client');
   api.addFiles('images/spritesheet.png', 'client');
