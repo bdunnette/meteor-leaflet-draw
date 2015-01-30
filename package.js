@@ -5,8 +5,9 @@ Package.describe({
 });
 
 Package.onUse(function (api) {
+  api.use('fuatsengul:leaflet', 'client');
   api.addFiles('lib/leaflet.draw.js', 'client');
-  api.addFiles('styles/leaflet.draw.css', 'client');
+  api.addFiles('leaflet.draw.css', 'client');
   api.addFiles('images/spritesheet.png', 'client');
   api.addFiles('images/spritesheet-2x.png', 'client');
 });
