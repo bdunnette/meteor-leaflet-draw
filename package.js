@@ -1,13 +1,16 @@
 Package.describe({
-  summary: "Adds support for drawing and editing vectors and markers on Leaflet maps",
-  version: "1.0.1",
-  git: "https://github.com/bdunnette/meteor-leaflet-draw.git"
+    name: "bdunnette:leaflet-draw",
+    summary: "Adds support for drawing and editing vectors and markers on Leaflet maps",
+    version: "1.0.2",
+    git: "https://github.com/bdunnette/meteor-leaflet-draw.git"
 });
 
 Package.onUse(function (api) {
-  api.use('fuatsengul:leaflet@1.0.1', 'client');
-  api.addFiles('lib/leaflet.draw.js', 'client');
-  api.addFiles('leaflet.draw.css', 'client');
-  api.addFiles('images/spritesheet.png', 'client');
-  api.addFiles('images/spritesheet-2x.png', 'client');
+    api.use('bevanhunt:leaflet', 'client');
+    api.addFiles([
+        'lib/leaflet.draw.js',
+        'leaflet.draw.css',
+        'images/spritesheet.png',
+        'images/spritesheet-2x.png'
+    ], 'client');
 });
